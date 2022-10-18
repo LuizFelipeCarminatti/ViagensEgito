@@ -6,9 +6,10 @@
     --azulado-cor: #323F59;
     --azuladoClaro-cor: #44516c;
     --azuladoEscuro-cor: #0f1218;
+    --azuladoEscuro2-cor: #151a23;
     --amarelado-cor: #F28B30;
     --marrom-cor: #592B02;
-    --laranjado-cor: #AB4D10;
+    --laranjado-cor: #bd6d38;
     --cinza-cor: #736D63;
 }
 
@@ -33,12 +34,58 @@ body{
 main{
     grid-area: menu;
 }
-main section#inicio img{
-    width: 1000px;
-    opacity: 0.1;
-    position: relative;
-    top: 450px;
-    right: 0;
+main#conteudo section#inicio img{
+    position: absolute;
+    right: 100px;
+    top: 300px;
+}
+main#conteudo section#inicio article{
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    margin: 10px;
+}
+main section#inicio article p{
+    color: #fff;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main #triangulo #piramide1{
+    width: 0px;
+    height: 0px;
+    border: 200px solid transparent;
+    border-bottom: 200px solid var(--azuladoEscuro2-cor);
+    border-left: 200px solid var(--azuladoEscuro2-cor);
+    transform: rotate(135deg);
+    display: inline-block;
+    position: absolute;
+    top: 800px;
+    
+}
+main #triangulo #piramide2{
+    width: 0px;
+    height: 0px;
+    border: 150px solid transparent;
+    border-bottom: 150px solid var(--azuladoEscuro2-cor);
+    border-left: 150px solid var(--azuladoEscuro2-cor);
+    transform: rotate(135deg);
+    display: inline-block;
+    position: absolute;
+    top: 850px;
+    left: 600px;
+}
+main #triangulo #piramide3{
+    width: 0px;
+    height: 0px;
+    border: 100px solid transparent;
+    border-bottom: 100px solid var(--azuladoEscuro2-cor);
+    border-left: 100px solid var(--azuladoEscuro2-cor);
+    transform: rotate(135deg);
+    display: inline-block;
+    position: absolute;
+    top: 900px;
+    left: 800px;
+    
 }
 header{
     grid-area: header;
@@ -103,17 +150,34 @@ aside nav ul li a{
 }
 footer{
     grid-area: footer;
+    background-color: var(--azulado-cor);
+    color: var(--amarelado-cor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+footer a{
+    color: var(--amarelado-cor);
+    margin: 5px;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer span#ano{
+    margin: 5px;
+}
+footer div#logoMarca{
+    width: 100px;
+    height: 100%;
+}
+footer div#logoMarca img{
+    width: 100%;
 }
 section{
     width: 100%;
     height: 900px;
-}
-section:nth-child(2){
-    background-image: url('img/pexels-marcel-winger-2445852.jpg');
-    background-position: left center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
 }
 section:nth-child(4){
     background-image: url('img/pexels-thais-cordeiro-3873681.jpg');

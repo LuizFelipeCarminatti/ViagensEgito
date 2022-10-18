@@ -13,4 +13,29 @@
         width: 200px;
         transform: translate(-200px);
     }
+
+    main #triangulo{
+        display: none;
+    }
+    main section#inicio article p{
+        display: none;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: 
+            'header header' 
+            'menu menu' 
+            'footer footer';
+    }
+    main#conteudo section#inicio img{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main#conteudo section#inicio article{
+        width: 400px;
+    }
 }
