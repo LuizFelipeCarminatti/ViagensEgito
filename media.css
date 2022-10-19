@@ -32,6 +32,13 @@
     main#conteudo section#inicio img{
         display: none;
     }
+
+    section#inicio {
+        background-image: url("img/capa.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.5;
+    }
 }
 
 @media only screen and (min-width: 992px) {

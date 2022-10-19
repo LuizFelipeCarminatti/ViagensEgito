@@ -18,7 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
     background-color: var(--azuladoEscuro-cor);
@@ -34,10 +34,28 @@ body{
 main{
     grid-area: menu;
 }
+main section#inicio{
+    background-image: linear-gradient(var(--laranjado-cor), transparent);
+}
+main#conteudo button#scroll{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--amarelado-cor);
+    display: none;
+}
+main#conteudo button#scroll:hover{
+    background-color: var(--laranjado-cor);
+}
 main#conteudo section#inicio img{
-    position: absolute;
-    right: 100px;
-    top: 300px;
+    position: relative;
+    left: 800px;
+    top: 200px;
 }
 main#conteudo section#inicio article{
     position: absolute;
@@ -48,7 +66,6 @@ main#conteudo section#inicio article{
 main section#inicio article p{
     color: #fff;
     font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 main #triangulo #piramide1{
     width: 0px;
@@ -87,6 +104,53 @@ main #triangulo #piramide3{
     left: 800px;
     
 }
+main#conteudo div#item{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+main#conteudo div#item p.seta{
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    width: 20px;
+    height: 20px;
+    animation-name: efeito-seta;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    transition: all 1s ease-in-out;
+    padding: 10px;
+}
+p.seta::before{
+    content: '';
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+p.seta::after{
+    content: '';
+    border-top: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    left: 11px;
+    top: -10px;
+}
+@keyframes efeito-seta {
+    0%{
+        opacity: 1;
+        transform: translate(0px, 50px) rotate(45deg);
+    }  
+    100%{
+        opacity: 0;
+    }
+}
 header{
     grid-area: header;
     position: fixed;
@@ -98,7 +162,6 @@ header{
 header p {
     margin: auto;
     font-size: 30px;
-    font-family: 'Josefin Sans', sans-serif;
     color: var(--amarelado-cor);
 }
 header .logo{
@@ -122,12 +185,13 @@ header button{
 }
 aside{
     grid-area: aside;
-    background-color: var(--azuladoClaro-cor);
+    background-color: var(--azuladoEscuro2-cor);
     padding: 5px;
     position: fixed;
     top: 104px;
     width: 300px;
     height: 100vh;
+    transition: all 0.5s linear;
 }
 aside nav{
     padding: 5px;

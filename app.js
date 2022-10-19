@@ -13,3 +13,17 @@ function ano() {
     anoAtual.innerHTML = ano
 }
 ano()
+
+let scroll = document.getElementById('scroll')
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 400){
+        scroll.style.display = 'block'
+    }else{
+        scroll.style.display = 'none'
+    }
+
+})
+
+scroll.addEventListener('click', () => {
+    window.scrollTo(0, 0)
+})
