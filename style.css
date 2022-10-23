@@ -218,7 +218,6 @@ main#conteudo section#contato article form button{
 }
 main#conteudo section#content{
     height: auto;
-    padding: 10px;
 }
 main#conteudo section#content article{
     width: 95%;
@@ -255,7 +254,7 @@ main#conteudo section#content  #article3{
     align-items: center;
     align-content: center;
 }
-main#conteudo section#content  #article3 h1{
+main#conteudo section#content  #article3 h1{ 
     color: var(--amarelado-cor);
     font-size: 30px;
     text-align: center;
@@ -275,6 +274,11 @@ main#conteudo section#content article#article3 div#principal label{
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 3px 3px 1px #b55400;
+}
+
+main#conteudo section#content article#article3 div#principal label:active{
+    box-shadow: 0 0 0 0 #b55400, inset 3px 3px 3px #b55400; 
 }
 
 main#conteudo section#content article#article3 div#principal .div{
@@ -372,6 +376,7 @@ aside nav ul li:hover{
 }
 aside nav ul li a{
     text-decoration: none;
+    padding: 30px;
     color: #fff;
 }
 footer{
