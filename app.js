@@ -1,13 +1,11 @@
 let btn = document.querySelector('[btn-click]')
 let aside = document.getElementById('aside')
-let conteudo = document.getElementById('conteudo')
 
 btn.addEventListener('click', function () {
     aside.classList.toggle('efeitoMenu')
 })
 
-let links = document.querySelectorAll('#btn-link')
-links.forEach(link => {
+document.querySelectorAll('#btn-link').forEach(link => {
     link.onclick = function () {
         aside.classList.remove('efeitoMenu')
     }
