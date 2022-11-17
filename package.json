@@ -1,0 +1,36 @@
+{
+  "name": "viagensegito",
+  "version": "1.0.0",
+  "description": "Site especializado em viagens para Egito",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizFelipeCarminatti/ViagensEgito.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuizFelipeCarminatti/ViagensEgito/issues"
+  },
+  "homepage": "https://github.com/LuizFelipeCarminatti/ViagensEgito#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "1.6.1",
+    "font-awesome": "4.7.0",
+    "gulp": "4.0.2",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "4.0.0",
+    "gulp-sass": "5.0.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-watch": "5.0.1",
+    "gulp-webserver": "0.9.1",
+    "sass": "^1.56.1"
+  }
+}
