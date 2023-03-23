@@ -417,3 +417,14 @@ section:nth-child(4){
     background-attachment: fixed;
     height: 600px;
 }
+
+#video{
+    width: 100%;
+    border-bottom: 1px solid #2c2b2b;
+
+}
+
+#video video{
+    width: 60%;
+    margin: 20px;
+}
