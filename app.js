@@ -40,7 +40,7 @@ scroll.addEventListener('click', () => {
 let article1 = document.getElementById('article1')
 let article2 = document.getElementById('article2')
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset > 200) {
         article1.style.transition = 'all 1s'
         article1.style.transform = 'translate(0px)'
         article1.style.opacity = 1
