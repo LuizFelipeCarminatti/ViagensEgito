@@ -51,6 +51,10 @@ main#conteudo button#scroll{
     display: none;
     z-index: 1;
 }
+main#conteudo button#scroll span.material-symbols-outlined{
+    font-size: 40px;
+    padding-top: 5px;
+}
 main#conteudo button#scroll:hover{
     background-color: var(--laranjado-cor);
 }
@@ -177,12 +181,15 @@ main#conteudo section#sobre article p{
     top: 90px;
     text-align: justify;
 }
+main#conteudo section#contato{
+    height: 60vh;
+}
 main#conteudo section#contato article{
     height: auto;
     width: 50%;
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 main#conteudo section#contato article h1{
     color: var(--amarelado-cor);

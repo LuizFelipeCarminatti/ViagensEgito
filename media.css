@@ -38,6 +38,7 @@
     }
     main#conteudo section#sobre{
         height: 700px;
+        margin-top: 100px;
     }
     main#conteudo section#sobre article{
         position: absolute;
@@ -87,6 +88,15 @@
     main#conteudo section#content img{
         width: 400px;
         margin: auto;
+    }
+    main#conteudo section#contato article{
+        width: 100%;
+    }
+    main#conteudo section#contato article form{
+        padding-left: 100px;
+    }
+    main#conteudo section#contato article h1{
+        text-align: center;
     }
     section:nth-child(4){
         height: 300px;
