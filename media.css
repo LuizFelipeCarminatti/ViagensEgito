@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     header p{
         font-size: 20px;
     }
@@ -27,11 +27,10 @@
             'footer footer';
     }
 
-    section#inicio {
-        background-image: url("img/capa.jpg");
+    main section#inicio {
+        background-image: url("img/fundo.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
-        opacity: 0.5;
+        background-size: cover;
     }
     main#conteudo div#item{
         left: 50%;
@@ -61,17 +60,16 @@
         left: 80px;
     }
     main section#inicio article p{
-        color: #fff;
-        position: absolute;
-        right: 40px;
-        top: -200px;
-        font-size: 30px;
-        width: 300px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.649);
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.5 linear;
+        position: relative;
+        top: -150px;
     }
     main#conteudo section#inicio img{
-        position: relative;
-        left: 25%;
-        top: 300px;
+        display: none;
     }
     main#conteudo button#scroll{
         display: none !important;
@@ -117,34 +115,11 @@
     #item{
         display: none;
     }
+    #principal{
+        padding: 0 15px 0 0;
+    }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    aside{
-        width: 200px;
-    }
-    body {
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 1fr 100px;
-        grid-template-areas: 
-            'header header' 
-            'menu menu' 
-            'footer footer';
-    }
-    main#conteudo section#inicio article{
-        width: 400px;
-    }
-    main#conteudo section#sobre article p{
-        color: #fff;
-        width: 300px;
-        position: absolute;
-        right: 15%;
-        top: 100px;
-        text-align: justify;
-    }
-    main#conteudo section#sobre article img{
-        position: absolute;
-        top: 250px;
-        left: -150px;
-    }
+@media only screen and (max-width: 768px){
+    
 }
