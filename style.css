@@ -127,27 +127,21 @@ p.seta::after{
         opacity: 0;
     }
 }
+main#conteudo section#sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 main#conteudo section#sobre article{
-    position: absolute;
-    transform: translateY(100px);
-    left: 30%;
-    margin: auto;
-    width: 55%;
-    height: 80%;
-    background-image: linear-gradient(90deg, var(--amarelado-cor), var(--laranjado-cor));
-    border-radius: 400px;
+    display: flex;
+    justify-content: center;
 }
 main#conteudo section#sobre article img{
-    position: absolute;
-    top: 25%;
-    left: -20%;
+    margin-right: 30px;
 }
 main#conteudo section#sobre article p{
     color: #fff;
     width: 300px;
-    position: absolute;
-    right: 20%;
-    top: 90px;
     text-align: justify;
 }
 main#conteudo section#contato{
