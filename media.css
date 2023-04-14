@@ -48,16 +48,17 @@
         width: 100%;
         margin-bottom: 20px;
     }
-    main section#inicio article p{
-        width: 70%;
-        padding: 10px;
-        border-radius: 10px;
+    main section#inicio article .fr1{
+        display: none;
+    }
+    main section#inicio article .fr2{
+        width: 80%;
         transition: all 0.5 linear;
         position: relative;
-        top: -100px;
-        font-size: 15px;
-        line-height: 30px;
-        text-align: justify;
+        top: -50px;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
     }
     main#conteudo button#scroll{
         display: none !important;

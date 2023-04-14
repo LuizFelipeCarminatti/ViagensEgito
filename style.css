@@ -79,6 +79,10 @@ main section#inicio article p{
     text-shadow: 3px 3px 6px var(--azuladoEscuro-cor);
     transition: all 0.5s linear;
     transform: translate(0px, 50px);
+    line-height: 50px;
+}
+main section#inicio article .fr2{
+    display: none;
 }
 main#conteudo div#item{
     transform: translate(-50%, -50%);
