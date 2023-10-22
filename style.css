@@ -19,6 +19,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--azuladoEscuro-cor);
@@ -34,6 +35,7 @@ body{
 }
 main{
     grid-area: menu;
+    transition: all 0.5s linear;
 }
 main section#inicio{
     background-image: url('img/fundoLarge.jpg');
@@ -321,6 +323,10 @@ header button{
 }
 .efeitoMenu{
     transform: translate(0px);
+    transition: all 0.5s linear;
+}
+.moveConteudo{
+    transform: translate(150px);
     transition: all 0.5s linear;
 }
 aside{
