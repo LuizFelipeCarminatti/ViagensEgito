@@ -24,7 +24,7 @@ ano()
 
 let scroll = document.getElementById('scroll')
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 500) {
+    if (window.scrollY > 500) {
         scroll.style.display = 'block'
     } else {
         scroll.style.display = 'none'
@@ -43,11 +43,11 @@ scroll.addEventListener('click', () => {
 let article1 = document.getElementById('article1')
 let article2 = document.getElementById('article2')
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 200) {
+    if (window.scrollY > 200) {
         article1.style.transition = 'all 1s'
         article1.style.transform = 'translate(0px)'
         article1.style.opacity = 1
-    } if (window.pageYOffset > 800) {
+    } if (window.scrollY > 800) {
         article2.style.transition = 'all 1s'
         article2.style.transform = 'translate(0px)'
         article2.style.opacity = 1

@@ -32,6 +32,7 @@ body{
     'aside menu'
     'aside footer';
     overflow-x: hidden;
+    behavior: smooth;
 }
 main{
     grid-area: menu;
@@ -92,7 +93,7 @@ main#conteudo div#item{
     top: 90%;
     left: 60%;
 }
-main#conteudo div#item p.seta{
+p.seta{
     border-top: 2px solid rgb(255, 255, 255);
     border-left: 2px solid rgb(255, 255, 255);
     transform: rotate(45deg);
@@ -119,7 +120,7 @@ p.seta::after{
     border-left: 2px solid rgb(255, 255, 255);
     width: 20px;
     height: 20px;
-    display: inline-block;
+    display: block;
     position: relative;
     left: 11px;
     top: -10px;
